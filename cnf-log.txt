@@ -1,0 +1,1 @@
+the number 12345 took: 1.2345 seconds
