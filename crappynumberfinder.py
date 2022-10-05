@@ -14,11 +14,11 @@ while w == True:
         w = False
         break
 
-print("guessing the number, it will aprox take: ", a/1000, "seconds.")
+print("guessing the number, it will aprox take: ", a/100, "seconds.")
 guess = True
 num = 0
 while guess == True:
-    sleep(0.001)
+    sleep(0.01)
     num += 1
     num = round(num)
     print("\r", num, end='')
