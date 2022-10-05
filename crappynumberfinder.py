@@ -1,4 +1,3 @@
-import random as r
 from time import *
 
 
@@ -14,11 +13,11 @@ while w == True:
         w = False
         break
 
-print("guessing the number, it will aprox take: ", a/100, "seconds.")
+print("guessing the number, it will aprox take: ", a/10000, "seconds.")
 guess = True
 num = 0
 while guess == True:
-    sleep(0.01)
+    
     num += 1
     num = round(num)
     print("\r", num, end='')
