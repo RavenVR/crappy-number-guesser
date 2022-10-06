@@ -1,6 +1,7 @@
 import random as r
 from time import *
 
+a1 = open(r"cnf-log.txt", "r+")
 
 while True:
     try:
@@ -15,6 +16,9 @@ while True:
     
 
 print("guessing the number, it will aprox take: ", a/10000, "seconds.")
+time = str(a/10000)
+number = str(a)
+log = ["The number: ",number," took: ",time," seconds"]
 guess = True
 num = 0
 while guess == True:
@@ -27,5 +31,5 @@ while guess == True:
         break
 
 print("\rthe number was: ", num)
-
+a1.writelines(log)
 sleep(5)
