@@ -36,7 +36,12 @@ else:
 while h == True:
     time = str(a/100000)
     number = str(a)
-    log1 = "The number: ",number," took: ",time," seconds."
+    if mode == 'r':
+        log1 = "The random number: ",number," took: ",time," seconds."
+    elif mode == 'n':
+        log1 = "The number: ",number," took: ",time," seconds."
+    else:
+        quit()
     log = convertTuple(log1)
     guess = True
     h = False
