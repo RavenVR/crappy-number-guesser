@@ -34,7 +34,7 @@ else:
     print('please try again!')
     sleep(1)
 while h == True:
-    time = str(a/100000)
+    time = str(round(a/10000))
     number = str(a)
     if mode == 'r':
         log1 = "The random number: ",number," took: ",time," seconds."
