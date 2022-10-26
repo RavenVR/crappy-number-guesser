@@ -25,7 +25,7 @@ if mode == "n":
         except ValueError:
             print ("Oops!  That was no valid number.  Try again...")
             sleep(1)
-    print("guessing the number, it will aprox take: ", a/10000, "seconds.")
+    print("guessing the number, it will aprox take: ", round(a/10000), "seconds.")
     
 elif mode == "r":
     a = r.randint(1,600000)
